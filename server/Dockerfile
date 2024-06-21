@@ -17,7 +17,7 @@ COPY package-lock.json package-lock.json
 RUN npm install
 # install dependencies when package .json is changed (efficient caching)
 COPY . .
-# copies everything
+
 
 
 ENTRYPOINT [ "node", "index.js" ]
